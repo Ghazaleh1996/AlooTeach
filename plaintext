@@ -1,0 +1,36 @@
+AlooTeach
+│
+├── backend/
+│   ├── config/
+│   │   ├── database.php              # Database connection setup
+│   │   └── mail.php                  # Configuration for email notifications
+│   ├── controllers/
+│   │   ├── AuthController.php        # Handles user login, registration, role management
+│   │   ├── DashboardController.php    # Handles dashboard data retrieval
+│   │   ├── NotificationController.php # Manages notifications and emails
+│   │   └── CourseController.php       # Manages courses and student enrollments
+│   ├── models/
+│   │   ├── User.php                  # User model with role-based methods
+│   │   ├── Course.php                # Course model with retrieval/enrollment methods
+│   │   └── Notification.php          # Notification model with email trigger
+│   ├── views/
+│   │   ├── dashboard/                # Views for different role-based dashboards
+│   │   │   ├── student_dashboard.php
+│   │   │   └── employee_dashboard.php
+│   │   └── auth/
+│   │       ├── login.php
+│   │       ├── register.php
+│   └── routes.php                    # Routes for backend endpoints
+│
+├── frontend/
+│   ├── css/
+│   │   └── styles.css                # Main CSS for layout and styling
+│   ├── js/
+│   │   └── scripts.js                # JavaScript for interactivity
+│   ├── index.php                     # Entry page with login/register options
+│   ├── about.php                     # About Us page
+│   ├── services.php                  # Services page detailing teaching and consulting
+│   └── contact.php                   # Contact page with form submission
+│
+├── docker-compose.yml                # Docker configuration for PHP, MySQL, and PHPMyAdmin
+└── .env                              # Environment variables (e.g., DB credentials)
